@@ -1,0 +1,121 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fbfbfd;
+    color: #222;
+}
+
+header {
+    background-color: #f0fbff;
+    padding: 24px 16px;
+    text-align: center;
+    border-bottom: 1px solid #e6f3f7;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #0b5660;
+}
+
+nav {
+    background-color: #eaf9fb;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+}
+
+nav a {
+    margin: 0 14px;
+    text-decoration: none;
+    color: #066166;
+    font-weight: 600;
+    padding: 6px 8px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: #dff6f8;
+}
+
+main {
+    padding: 26px 16px;
+    max-width: 980px;
+    margin: 24px auto;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #eaf9fb;
+    text-align: center;
+    padding: 14px;
+    margin-top: 30px;
+    font-size: 0.95rem;
+    color: #055559;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hero .intro {
+    flex: 1 1 320px;
+}
+
+.hero img {
+    max-width: 320px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(10,20,30,0.06);
+}
+
+.card {
+    background: white;
+    padding: 14px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(10,20,30,0.04);
+    margin-bottom: 16px;
+}
+
+.blog-post {
+    border-bottom: 1px solid #eceff1;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+}
+
+.blog-post h2 {
+    margin: 0 0 6px 0;
+    color: #0b5660;
+}
+
+.blog-meta {
+    color: #66797a;
+    font-size: 0.9rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 14px;
+    background: #06a0a8;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.contact-list p {
+    margin: 6px 0;
+}
+
+@media (max-width: 700px) {
+    .hero {
+        flex-direction: column;
+    }
+}

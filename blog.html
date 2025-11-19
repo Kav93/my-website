@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog - Kavindya Wanigasinghe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Blog</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blog.html">Blog</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <main>
+    <section class="card">
+      <h2>Welcome to my blog</h2>
+      <p class="blog-meta">This blog is where I break down the fascinating and sometimes frustrating world of EdTech. You can expect real-world troubleshooting guides, insights into school infrastructure management, and discussions on the best tools to enhance learning..</p>
+    </section>
+
+
+ <article class="card blog-post">
+  <h3>Helpdesk Ticketing System Project</h3>
+  <p><strong>Date:</strong> 2025-11-18</p>
+  
+  <p>This project demonstrates how I built a simple Helpdesk Ticketing System using Microsoft tools...</p>
+
+  <ul>
+    <li>Overview of requirements</li>
+    <li>Tools used (Excel, SharePoint, Power Automate...)</li>
+    <li>Workflow diagrams</li>
+    <li>Screenshots (optional)</li>
+  </ul>
+  <p>
+    Full document available here:
+    <a href="files/helpdesk-project.pdf" target="_blank">Download Project PDF</a>
+  </p>
+  
+</article>
+
+    <section class="card">
+      <h3>💡Solved: Fixing Lenovo ThinkPad Touchscreen Issues (The Registry Fix)</h3>
+	  <p><strong>Date:</strong> 2025-11-19</p>
+      <p>If you're supporting Lenovo ThinkPad Gen4 (or similar) laptops and suddenly the touchscreen stops responding for a specific user, you're not alone. The usual suspects—drivers and BIOS settings—often don't fix it.
+
+Through a structured troubleshooting process, I discovered this is often caused by corrupt or misconfigured user-specific touch and pen calibration settings stored in the Windows Registry.
+
+Here is the step-by-step fix that resolved the issue.</p>
+      <p> <b>⚠️Important Warning
+-You are editing the Windows Registry. Always back up the registry first (File > Export) before proceeding.</b></p>
+
+		<h5>⚙️The Simple Steps:</h5>
+		<p>Step 1: Open the Registry Editor
+			Press the Windows Key + R, type regedit, and hit Enter.</p>
+		<p>Step 2: Reset Touch and Pen Calibration</p>
+			<p>-Navigate to: HKEY_CURRENT_USER\Software\Microsoft\ </p>
+
+			<p>-Find the folder (key) named Wisp.</p>
+
+			<p>-Right-click the Wisp key and choose Rename.</p>
+
+			<p>-Rename it to Wisp.old. (Windows will create a new, clean one automatically).</p>
+		<p>Step 3: Clean Up Optional Settings</p>
+			<p>While still in the HKEY_CURRENT_USER\Software\Microsoft\ path, look for the following two keys:</p>
+				<p>-TouchPrediction (If you see it, right-click and Delete it).</p>
+				<p>-TabletTip (If you see it, right-click and Rename it to TabletTip.old).</p>
+		<p>Step 4: Restart</p>
+			<p>Restart the computer. When the affected user logs back in, the system will generate fresh, non-corrupt touch settings, and your touchscreen should be working again!</p>
+    </section>
+
+	<section class="card">
+	<h3> 💻 Digital Exam Timer Project (School Exam Display)</h3>
+	<p><strong>Date:</strong> 2025-11-19</p>
+	<p>Our school needed a reliable digital exam timer for VCE, year-level exams, and general assessments. Unfortunately, the original timer files were lost, so I undertook a project to recreate it with modern functionality.</p>
+	
+	<h5>🛠️ Rebuilding the Timer</h5>
+	<p>I rebuilt the timer using HTML, CSS, and JavaScript. This approach ensures maximum compatibility, allowing the timer to run easily on any browser, classroom TV, projector, or PC.</p>
+	<p><b>Key Development Steps:</p></b>
+		<p>-Designed Layout: Focused on large, bold text and school colors for maximum visibility.</p>
+		<p>-JavaScript Logic: Implemented robust countdown logic and an end-of-time alert.</p>
+		<p>-Full Screen: Optimized the design for a clean, distraction-free full-screen view.</p>
+	
+	<p><b> ⭐ Timer Features </p></b>
+		<p>This version is designed to be simple, reliable, and versatile:</p>
+			<p>-Large Digital Clock: Highly visible countdown display.</p>
+			<p>-Controls: Simple Start/Pause/Reset functionality.</p>
+			<p>-Custom Duration: Easy input for any exam length.</p>
+			<p>-Alerts: Auto "Time's Up" message when the countdown finishes.</p>
+			<p>-Versatile: Works offline and is responsive on all screen sizes.</p>
+	<p><b>📥 Download the HTML Version </b></p>
+		<p>The full working version, including the source code, is available for download and reuse:</p>
+			<p>👉 Digital Exam Timer (HTML)</p>
+				<p>-The download includes index.html, script.js, and style.css.</p>
+	</section>
+  </main>
+
+  <footer>
+    &copy; 2025 Kavindya Wanigasinghe. All rights reserved.
+  </footer>
+</body>
+</html>
